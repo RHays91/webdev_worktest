@@ -1,0 +1,29 @@
+<div class="thread-card">
+
+  <div class="card-header">
+
+    <div class="thread-user-image" ng-style="{ 'background-image': 'url({{question.user.picture}})' }"></div>
+
+    <div class="thread-user-info">
+      <div class="thread-user-name">{{question.user.name}}</div>
+      <span class="thread-user-location">{{question.user.location}}</span>
+    </div>
+
+  </div>
+
+  <div class="card-question">{{question.text}}</div>
+
+  <div class="card-body">
+
+    <div class="thread-answer-user">
+      <span class="user-answer-name">{{receiver.name}}</span>
+      <div class="user-answer-image" ng-style="{ 'background-image': 'url({{receiver.picture}})' }"></div>
+    </div>
+
+    <div class="card-answer">
+      {{question.answer}}
+    </div>
+
+  </div>
+
+</div>

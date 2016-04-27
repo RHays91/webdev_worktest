@@ -1,0 +1,16 @@
+<div class="topic-item">
+  <div class="col col-14">
+    <div class="user-image" ng-style="{ 'background-image': 'url({{item.user.picture}})' }"></div>
+  </div>
+  <div class="col col-19 pad-left-sm">
+    <div class="user-name">{{item.user.name}}</div>
+    <span class="qna">Q&amp;A</span>
+    <span class="live">Live</span>
+  </div>
+  <div class="col col-55 pad-left-md">
+    <div class="topic-subject center-y">{{item.topic}}</div>
+  </div>
+  <div class="col col-12" ng-click="viewThread(item.qaId)" ng-class="{ hover: !mobile }">
+    <img class="topic-enter center-y" ng-src="assets/circle_rightarrow.png" />
+  </div>
+</div>

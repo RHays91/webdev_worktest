@@ -1,0 +1,19 @@
+<div id="flex-wrap">
+  <nav class="nav" ng-class="{ 'nav-desktop': !mobile }">
+    <div class="header">
+      <img ng-src="assets/watermelon.png" class="logo">
+      <span class="logo-text">Slice</span>
+    </div>
+    <ul class="tabs-desktop" ng-if="!mobile">
+      <li class="hover" ng-class="{ 'tab-select': $state.includes('qa') }">Q&amp;A</li
+      ><li class="hover">JOBS</li
+      ><li class="hover">CONTACT</li>
+    </ul>
+  </nav>
+
+  <div id="topic-container" ng-class="{ 'topic-border': !mobile, 'thread-flex': $state.includes('qa.thread') }" ui-view="qa-view"></div>
+</div>
+
+<div class="body-mask">
+  <div class="copyright center-x">&copy; 2016 PLUS ONE MEDIA GROUP, INC. | ALL RIGHTS RESERVED.</div>
+</div>

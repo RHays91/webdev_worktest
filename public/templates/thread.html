@@ -1,0 +1,3 @@
+<div class="thread-topic">Topic: {{thread.topic}}</div>
+<img class="thread-leave" ng-src="assets/circle_rightarrow.png" ng-click="thread.backToTopics()" ng-class="{ hover: !mobile }" />
+<thread-question ng-repeat="question in thread.session.questions" question="question" receiver="thread.session.user" mobile="mobile"></thread-question>
